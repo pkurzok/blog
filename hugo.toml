@@ -4,15 +4,20 @@ title = 'App Development with Peter'
 theme = "github-style"
 
 [params]
-  author = "Peter Kurzok"
-  description = "I'm Peter and this is my Blog. Here I rarely write about things related to App Development."
-  github = "pkurzok"  
-  linkedin = "peter-kurzok-50a33288"
-  instagram = "filmaniac"
-  email = "blog@peterkurzok.de"
-  url = "https://blog.peterkurzok.de"
-  keywords = "blog, ios, development, swift, apple"
-  rss = true
-  headerIcon = "/images/github-mark-white.png"
-  avatar = "/images/DSC_3460.jpg"
-  location = "Germany"
+	author = "Peter Kurzok"
+	description = "I'm Peter and this is my Blog. Here I rarely write about things related to App Development."
+	github = "pkurzok"  
+	linkedin = "peter-kurzok-50a33288"
+	instagram = "filmaniac"
+	email = "blog@peterkurzok.de"
+	url = "https://blog.peterkurzok.de"
+	keywords = "blog, ios, development, swift, apple"
+	rss = true
+	lastmod = true
+	favicon = "/images/github-mark.png"
+	headerIcon = "/images/github-mark-white.png"
+	avatar = "/images/DSC_3460.jpg"
+	location = "Germany"
+
+ [frontmatter]
+ 	lastmod = ["lastmod", ":fileModTime", ":default"]
