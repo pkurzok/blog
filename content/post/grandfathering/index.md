@@ -14,7 +14,7 @@ I got it completely wrong and it turned into a massive headache and patch releas
 
 Well, at least there is documentation, you might say, there is even a whole article called [Supporting Business Model Changes](https://developer.apple.com/documentation/storekit/supporting-business-model-changes-by-using-the-app-transaction). Don't get me wrong, it's good that it exists.
 
-The process itself is simple: You get something called an [AppTransaction](https://developer.apple.com/documentation/storekit/apptransaction) from from StoreKit. It has a property called [originalAppVersion](https://developer.apple.com/documentation/storekit/apptransaction/originalappversion). This is the version your customer originally purchased your app with.
+The process itself is simple: You get something called an [AppTransaction](https://developer.apple.com/documentation/storekit/apptransaction) from StoreKit. It has a property called [originalAppVersion](https://developer.apple.com/documentation/storekit/apptransaction/originalappversion). This is the version your customer originally purchased your app with.
 
 Compare that version to the version of your new business model. If it is smaller, the customer is eligible for the free Pro tier. Simple, right?
 
