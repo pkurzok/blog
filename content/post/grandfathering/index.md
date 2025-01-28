@@ -4,7 +4,7 @@ draft = false
 title = 'Grandfathering'
 +++
 
-# Grandfathering
+## Grandfathering
 
 I recently changed the business model of my app [PlayTales](https://apps.apple.com/us/app/playtales/id6444850972) from paying upfront to free with in-app purchase. A process also known as grandfathering.
 
