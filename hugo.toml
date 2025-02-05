@@ -6,6 +6,7 @@ theme = "github-style"
 [params]
 	author = "Peter Kurzok"
 	description = "I'm Peter and this is my Blog. Here I rarely write about things related to App Development."
+	tagline = "I'm Peter and this is my Blog. Here I write about all things related to App Development."
 	github = "pkurzok"  
 	linkedin = "peter-kurzok-50a33288"
 	instagram = "filmaniac"
@@ -16,7 +17,7 @@ theme = "github-style"
 	lastmod = true
 	favicon = "/images/github-mark.png"
 	headerIcon = "/images/github-mark-white.png"
-	avatar = "/images/DSC_3460.jpg"
+	avatar = "/images/avatar.webp"
 	location = "Germany"
 
  [frontmatter]
