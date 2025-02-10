@@ -1,4 +1,4 @@
-baseURL = 'http://blog.peterkurzok.de/'
+baseURL = 'https://blog.peterkurzok.de/'
 languageCode = 'en-us'
 title = 'App Development with Peter'
 theme = "github-style"
