@@ -86,7 +86,7 @@ let attestKey = try await DCAppAttestService.shared.attestKey(keyId, clientDataH
 Using our key identifier and a hash of the retrieved challenge, we call the *DCAppAttestService* to create our attestation.
 
 #### Step 4: Validating the Attestation
-![Create the Attestation Object](images/AppAttestation.008.heic)
+![Validating the Attestation Object](images/AppAttestation.008.heic)
 
 The next step, and depending on your use case, this may be the last step, is to present the Attestation object to your server.
 
@@ -109,8 +109,20 @@ let appID = AppID(teamID: "83Z139DVZ2", bundleID: "com.example.myapp")
 let result = try AppAttest.verifyAttestation(challenge: challenge, request: request, appID: appID)
 
 ``` 
+To implement the server-side validation, I can recommend using [Ian Sampson's AppAttest framework](https://github.com/iansampson/AppAttest).
 
+We receive the attestation object, key and challenge identifier from our client's request. With the challenge identifier we can load the persisted challenge data and use it in the validation process. With the given data we can create an AttestationRequest Object and let the AppAttest Framework do it's magic.
 
+However, the term *request* is somewhat misleading. The validation does not send a request to Apple. It is merely a request to the framework and happens on the server.
 
+#### Step 5: It depends...
+![Returning the valuable goods](images/AppAttestation.009.heic)
 
+What happens next depends heavily on your use case. If you are protecting access to a one-time resource, such as a download of some premium content, you are done with your attestation workflow. If you had a positive validation of the attestation object, your server is talking to a legitimate instance of your app, and you can respond with your premium content.
+
+If, on the other hand, your use case involves continuing to exchange critical communications, i.e., expensive or critical state changes, the DeviceCheck framework has you covered and provides a method to protect your requests while limiting overhead: [Assertions](https://developer.apple.com/documentation/devicecheck/establishing-your-app-s-integrity#Assert-your-apps-validity-as-necessary)
+
+> After successfully verifying a key’s attestation, your server can require the app to assert its legitimacy for any or all future server requests.
+
+#### Step 6: Creating Assertions
 
