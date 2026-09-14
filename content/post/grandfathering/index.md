@@ -59,5 +59,3 @@ But why in God's name are they parsing and splitting it as if it were a version 
 > In the sandbox testing environment, the originalAppVersion value is always 1.0.
 
 Perhaps that is why... 
-
-<!--![A Picture of a smiley](images/image.png)-->
