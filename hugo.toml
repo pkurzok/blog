@@ -11,13 +11,13 @@ theme = "github-style"
 	linkedin = "peter-kurzok-50a33288"
 	instagram = "filmaniac"
 	email = "blog@peterkurzok.de"
-	url = "https://blog.peterkurzok.de"
+	url = "https://apps.peterkurzok.de"
 	keywords = "blog, ios, development, swift, apple"
 	rss = true
 	lastmod = true
 	favicon = "/images/github-mark.png"
 	headerIcon = "/images/github-mark-white.png"
-	avatar = "/images/avatar.webp"
+	avatar = "/images/avatar-peter.webp"
 	location = "Germany"
 
  [frontmatter]
