@@ -11,7 +11,7 @@ theme = "github-style"
 	linkedin = "peter-kurzok-50a33288"
 	instagram = "filmaniac"
 	email = "blog@peterkurzok.de"
-	url = "https://blog.peterkurzok.de"
+	url = "https://apps.peterkurzok.de"
 	keywords = "blog, ios, development, swift, apple"
 	rss = true
 	lastmod = true
@@ -19,10 +19,6 @@ theme = "github-style"
 	headerIcon = "/images/github-mark-white.png"
 	avatar = "/images/avatar-peter.webp"
 	location = "Germany"
-
-	[[params.links]]
-		title = "Apps"
-		href = "https://apps.peterkurzok.de"
 
  [frontmatter]
  	lastmod = ["lastmod", ":fileModTime", ":default"]
