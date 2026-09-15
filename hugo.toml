@@ -17,8 +17,12 @@ theme = "github-style"
 	lastmod = true
 	favicon = "/images/github-mark.png"
 	headerIcon = "/images/github-mark-white.png"
-	avatar = "/images/avatar.webp"
+	avatar = "/images/avatar-peter.webp"
 	location = "Germany"
+
+	[[params.links]]
+		title = "Apps"
+		href = "https://apps.peterkurzok.de"
 
  [frontmatter]
  	lastmod = ["lastmod", ":fileModTime", ":default"]
